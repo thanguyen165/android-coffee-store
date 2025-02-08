@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.thanguyen.coffeestore.ui.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/navigation_profile"
+        android:name="com.thanguyen.coffeestore.ui.profile.ProfileFragment"
+        android:label="@string/title_profile"
+        tools:layout="@layout/fragment_profile" />
+
+    <fragment
+        android:id="@+id/navigation_beverage_details"
+        android:name="com.thanguyen.coffeestore.ui.beveragedetails.BeverageDetailsFragment"
+        android:label="@string/title_details"
+        tools:layout="@layout/fragment_beverage_details" />
+
+    <fragment
+        android:id="@+id/navigation_cart"
+        android:name="com.thanguyen.coffeestore.ui.cart.CartFragment"
+        android:label="@string/title_cart"
+        tools:layout="@layout/fragment_cart" />
+
+    <fragment
+        android:id="@+id/navigation_order_success"
+        android:name="com.thanguyen.coffeestore.ui.ordersuccess.OrderSuccessFragment"
+        android:label="@string/title_order_success"
+        tools:layout="@layout/fragment_order_success" />
+</navigation>

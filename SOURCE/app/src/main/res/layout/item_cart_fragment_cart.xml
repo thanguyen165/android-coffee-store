@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/background_rounded_ghost_white"
+    android:padding="8dp"
+    android:layout_marginBottom="10dp">
+
+    <ImageView
+        android:id="@+id/cart_item_beverage_image_res_id"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/beverage_americano"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/cart_item_beverage_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="Americano"
+        android:textColor="@color/dark_slate_gray"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@id/cart_item_price"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toEndOf="@+id/cart_item_beverage_image_res_id"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/cart_item_beverage_order_details"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="single | iced | medium | full ice"
+        android:textColor="@color/light_silver"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toStartOf="@id/cart_item_price"
+        app:layout_constraintStart_toEndOf="@+id/cart_item_beverage_image_res_id"
+        app:layout_constraintTop_toBottomOf="@+id/cart_item_beverage_name" />
+
+    <TextView
+        android:id="@+id/cart_item_beverage_order_quantity"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="x1"
+        android:textColor="@color/light_silver"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@id/cart_item_price"
+        app:layout_constraintStart_toEndOf="@+id/cart_item_beverage_image_res_id"
+        app:layout_constraintTop_toBottomOf="@+id/cart_item_beverage_order_details" />
+
+    <TextView
+        android:id="@+id/cart_item_price"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginEnd="5dp"
+        android:text="$3.00"
+        android:textColor="@color/dark_slate_gray"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

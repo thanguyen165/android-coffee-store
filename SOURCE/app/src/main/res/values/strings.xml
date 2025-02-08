@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">coffeeStore</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_profile">Profile</string>
+    <string name="title_details">Details</string>
+    <string name="title_cart">My cart</string>
+    <string name="title_order_success">Order Success</string>
+    <string name="order_success_subtitle">Your order has been placed successfully.\nFor more details, go to my orders.</string>
+</resources>
